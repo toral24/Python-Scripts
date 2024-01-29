@@ -11,10 +11,10 @@ jobs:
       contents: write
     steps:
       - name: setup-python
-      - uses: actions/setup-python@v5
+        uses: actions/setup-python@v5
         with: 
           python-versión: '3.12'
       - run: python ./FastAPI/main.py
 
       - name: commit and push
-      - uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v5
