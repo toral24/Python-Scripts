@@ -7,8 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-      permissons:
-        
+    permissions:
+      contents: write
     steps:
       - name: setup-python
       - uses: actions/setup-python@v5
@@ -18,4 +18,3 @@ jobs:
 
       - name: commit and push
       - uses: stefanzweifel/git-auto-commit-action@v5
-        - commit_user_name: Sergio Toral [GitHub Actions]
